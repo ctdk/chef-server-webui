@@ -1,7 +1,11 @@
 # chef-server-webui
 
-*NOTE: This software is deprecated. It will continue to receive critical
-security updates until the future release of Chef Server 13.*
+*NOTE: This software is deprecated for Chef, but since the release of goiardi
+1.0.0 keeps getting pushed back for various reasons (like more urgent bugs and
+features, real life, work, that kind of thing), and the new chef management
+console won't work with goiardi until it hits 1.0.0 with org and RBAC support,
+the old chef webui is being forked for goiardi to support those folks who want
+or need a web interface for goiardi until that time.*
 
 * Documentation: http://docs.opscode.com/
 * Tickets/Issues: http://tickets.opscode.com
@@ -10,22 +14,27 @@ security updates until the future release of Chef Server 13.*
 
 ## Overview ##
 
-The `chef-server-webui` is a simple Rails 3.2 application which talks to the Chef Server
-API (aka Erchef) for all back-end data. Installation is easy as the `chef-server-webui`
-already comes preconfigured as part of the default chef-server Omnibus package install. The
-`chef-server-webui` can also be deployed under any [Rack](http://rack.github.com/) compliant
-server.
+The `chef-server-webui` is a simple Rails 3.2 application which talks to the 
+Chef Server API (aka Erchef) for all back-end data. Installation is not as easy 
+as it is with erchef, because goiardi does not use omnibus packaging. 
+Simplifying the webui install is an ongoing project.  The `chef-server-webui` 
+can also be deployed under any [Rack](http://rack.github.com/) compliant server.
 
 The following default configuration values can be overriden in your Rails environment
 config:
 
 ```ruby
-config.chef_server_url = "http://127.0.0.1:8000"
+config.chef_server_url = "http://127.0.0.1:4545"
 config.rest_client_name = "chef-webui"
-config.rest_client_key = "/etc/chef-server/webui_priv.pem"
+config.rest_client_key = "/etc/goiardi/chef-webui.pem"
 config.admin_user_name =  "admin"
 config.admin_default_password = "p@ssw0rd1"
 ```
+
+*NOTE:* goiardi does not create a password for the admin user when goiardi is
+first started. (This is a feature.) If you want to use webui with goiardi, first
+you will have to set a password for the admin user with knife, then try and log
+in.
 
 ## Contributing/Development
 
@@ -41,10 +50,8 @@ of the Chef wiki.
 ## Reporting Bugs ##
 
 You can search for known issues in
-[Opscode Chef's bug tracker][jira]. Tickets should be filed under the
-**CHEF** project with the component set to **"Chef Server"**.
-
-[jira]: http://tickets.opscode.com/browse/CHEF
+[goiardi's Github issues page](https://github.com/ctdk/goiardi/issues). You
+should label webui related bugs with the "webui" label.
 
 ## License ##
 
