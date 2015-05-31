@@ -8,9 +8,9 @@ require 'rubygems/package_task'
 
 ChefServerWebui::Application.load_tasks
 
-spec = eval(File.read("chef-server-webui.gemspec"))
+#spec = eval(File.read("chef-server-webui.gemspec"))
 
-Gem::PackageTask.new(spec) do |pkg|
-  pkg.gem_spec = spec
-end
+#Gem::PackageTask.new(spec) do |pkg|
+#  pkg.gem_spec = spec
+#end
 
