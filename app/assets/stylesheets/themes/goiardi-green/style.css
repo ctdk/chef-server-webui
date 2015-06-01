@@ -21,7 +21,7 @@
 .gray { color:#999; }
 .hightlight { background-color:#ffc; }
 
-a:link, a:visited, a:hover, a:active, h1, h2, h3 { color: #007BA7; }
+a:link, a:visited, a:hover, a:active, h1, h2, h3 { color: #246D25; }
 
 body {
   color: #222;
@@ -78,16 +78,16 @@ hr {
 }
 
 #main-navigation {
-  background-color: #005573;
+  background-color: #003D00;
 }
 
 #main-navigation ul li a:hover  {
-  background-color: #102E41;
+  background-color: #003300;
 }
 
 #main-navigation ul li.active a, #main-navigation ul li.active a:visited {
   background: #F4F4F6;
-  color: #102E41;
+  color: #003300;
   font-weight: bold;
 }
 
@@ -96,17 +96,17 @@ hr {
 /* @group Secondary navigation */
 
 .secondary-navigation li a:hover {
-  background: #005573;
+  background: #003D00;
 }
 
 .secondary-navigation {
-  background: #007BA7;
+  background: #246D25;
   border-bottom-width: 7px;
-  border-bottom-color: #005573;
+  border-bottom-color: #003D00;
 }
 
 .secondary-navigation ul li.active, .secondary-navigation ul li.active a:hover {
-  background-color: #005573;
+  background-color: #003D00;
 }
 
 /* @end */
@@ -118,9 +118,9 @@ hr {
 }
 
 #sidebar h3 {
-  background: #007BA7;
+  background: #246D25;
   color: #F7F7F8;
-  border-bottom: 7px solid #005573;
+  border-bottom: 7px solid #003D00;
 }
 
 #sidebar ul li a:link, #sidebar ul li a:visited {
@@ -130,7 +130,7 @@ hr {
 }
 
 #sidebar ul li a:hover, #sidebar ul li a:active {
-  background: #005573;
+  background: #003D00;
   color: #F7F7F8;
 }
 
@@ -146,7 +146,7 @@ hr {
 
 #footer .block {
   color: #F7F7F8;
-  background: #005573;
+  background: #003D00;
 }
 
 #footer .block p {
@@ -157,20 +157,20 @@ hr {
 /* pagination */
 
 .pagination span.current {
-  background: #005573;
+  background: #003D00;
   color: #F7F7F8;
-  border-color: #005573;
+  border-color: #003D00;
 }
 
 .pagination a,
 .pagination span {
   color: #001C26;
-  border-color: #005573;
+  border-color: #003D00;
 }
 
 .pagination a:hover {
     color: #F7F7F8;
-    background: #005573;
+    background: #003D00;
 }
 
 /* tables */
@@ -263,7 +263,7 @@ ul.list li .item .avatar {
 }
 
 #box .block h2 {
-  background: #005573;
+  background: #003D00;
   color: #F7F7F8;
 }
 
