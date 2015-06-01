@@ -2,7 +2,7 @@
 %html
   %head
     %meta{ "http-equiv" => "content-type", :content => "text/html; charset=utf-8" }
-    %title Chef Server
+    %title= ChefServerWebui::Application.config.title_string
     = stylesheet_link_tag "application", :media => "all"
     = javascript_include_tag "application"
 
@@ -10,7 +10,7 @@
     #container
       #header
         %h1
-          = link_to "Chef Server", top_path
+          = link_to ChefServerWebui::Application.config.title_string, top_path
           %label{:for => 'environment-select'} Environment:
           %select{:name => 'environment-select', :onchange => 'jump(this)', :size => 1, :class => 'title-select'}
             - current_env = session[:environment]
