@@ -7,8 +7,9 @@ console won't work with goiardi until it hits 1.0.0 with org and RBAC support,
 the old chef webui is being forked for goiardi to support those folks who want
 or need a web interface for goiardi until that time.*
 
-* Documentation: http://docs.opscode.com/
-* Tickets/Issues: http://tickets.opscode.com
+* Documentation: http://docs.chef.io/
+* Goiardi Documentation: http://goiardi.readthedocs.org/
+* Tickets/Issues: https://github.com/ctdk/goiardi/issues
 * IRC: [#chef](irc://irc.freenode.net/chef) and [#chef-hacking](irc://irc.freenode.net/chef-hacking) on Freenode
 * Mailing list: http://lists.opscode.com
 
@@ -20,8 +21,8 @@ as it is with erchef, because goiardi does not use omnibus packaging.
 Simplifying the webui install is an ongoing project.  The `chef-server-webui` 
 can also be deployed under any [Rack](http://rack.github.com/) compliant server.
 
-The following default configuration values can be overriden in your Rails environment
-config:
+The following default configuration values can be overriden in your Rails 
+config in `config/initializers/webui_server_init.rb`:
 
 ```ruby
 config.chef_server_url = "http://127.0.0.1:4545"
