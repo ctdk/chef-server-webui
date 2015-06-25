@@ -1,0 +1,18 @@
+%h1 Listing reports
+
+%table
+  %tr
+    %th Node Name
+    %th Run ID
+    %th Status
+    %th Start Time
+    %th End Time
+
+  - @reports.each do |report|
+    %tr
+      %td= "#{report['node_name']}"
+      %td= "#{report['run_id']}"
+      %td= "#{report['status']}"
+      %td= "#{report['start_time']}"
+      %td= "#{report['end_time']}"
+

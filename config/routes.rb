@@ -53,6 +53,8 @@ ChefServerWebui::Application.routes.draw do
     resources :databag_items, :except => [:index]
   end
 
+  resources :reports
+
   resources :users do
     member do
       get 'logout'

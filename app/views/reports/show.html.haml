@@ -1,0 +1,15 @@
+%p#notice= notice
+
+= "Node: #{@report['run_detail']['node_name']}"
+%p
+Status 
+%b= @report['run_detail']['status']
+%p
+
+- @report['run_detail'].each do |k,v|
+  = "#{k} #{v}"
+  %p
+
+= @report
+
+= link_to 'Back', reports_path
