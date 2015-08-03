@@ -5,6 +5,7 @@ gem "jquery-rails"
 gem "haml-rails"
 gem "coderay"
 gem "http_status_exceptions", "~> 0.3.0"
+gem "mixlib-authentication", :git => "https://github.com/dennisklein/mixlib-authentication.git"
 
 # Used as a REST client to access the API
 gem "ohai", "~> 6.24.2"

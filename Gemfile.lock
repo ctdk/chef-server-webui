@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/dennisklein/mixlib-authentication.git
+  revision: 3000d822cdb9c46ec7d9cd553d337f08348b4ea7
+  specs:
+    mixlib-authentication (1.4.0)
+      mixlib-log
+      net-ssh
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -74,9 +82,6 @@ GEM
       treetop (~> 1.4.8)
     method_source (0.8.2)
     mime-types (1.25.1)
-    mixlib-authentication (1.4.0)
-      mixlib-log
-      net-ssh
     mixlib-cli (1.3.0)
     mixlib-config (2.2.1)
     mixlib-log (1.6.0)
@@ -165,6 +170,7 @@ DEPENDENCIES
   haml-rails
   http_status_exceptions (~> 0.3.0)
   jquery-rails
+  mixlib-authentication!
   ohai (~> 6.24.2)
   pry
   puma
@@ -172,3 +178,6 @@ DEPENDENCIES
   therubyracer
   thin
   uglifier
+
+BUNDLED WITH
+   1.10.2
