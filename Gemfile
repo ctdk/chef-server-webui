@@ -8,7 +8,7 @@ gem "http_status_exceptions", "~> 0.3.0"
 
 # Used as a REST client to access the API
 gem "ohai", "~> 6.24.2"
-gem "chef", "~> 11.4.0"
+gem "chef", "~> 11.18.12"
 
 group(:development) do
   gem 'pry'
